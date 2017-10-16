@@ -3,7 +3,7 @@ layout: post
 title:  "Getting started"
 date:   2017-10-16 09:21:06 +0200
 categories: jekyll update
-permalink: /docs/
+permalink: /getting-started/
 ---
 
 {% include side-menu.html %}
@@ -11,13 +11,7 @@ permalink: /docs/
 
 {% include post-content-open.html %}
 
-<!-- {{ post.title }} -->
-
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
+The simplest way to use a visualization created in CARTO on an external site is as follows.
 
 {% highlight ruby %}
 def print_hi(name)
@@ -27,9 +21,10 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
-{% include post-content-close.html %}
+[Grab the complete example source code](#)
+
+## Using the CARTO.js LibraryPermalink
+CARTO.js can be used to embed a visualization you have designed using CARTO’s user interface, or to dynamically create visualizations from scratch, using your data. If you want to create new maps on your webpage, jump to Creating a visualization from scratch. If you already have maps on your webpage and want to add CARTO visualizations to them, read Adding CARTO layers to an existing map.
+
+You can also use the CARTO APIs to create visualizations programmatically. This can be useful when the visualizations react to user interactions. To read more about it, jump to Creating visualizations at runtime.

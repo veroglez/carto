@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700|Open+Sans:300,400,600,700,800');
 
 $white: #fff;
-$grey: #eee;
-$dark-blue: #162945;
-$light-blue: #1181FB;
+$grey: #EEEEEE;
+$dark-blue: #162745;
+$dark-text: #162945;
+$light-blue: #1785FB;
 $text-grey: #647083;
 $background: #f9f9f9;
 $grey-title: #647082;
 $search: #ddd;
 $search-text: #b1b8c1;
+
+
+
 
 body {
 	margin: 0;
@@ -21,35 +25,42 @@ a{
 }
 
 h1{
-	font: 600 32px 'Montserrat';
-	margin: 75px 0;
+	font: 700 32px 'Montserrat';
+	margin: 0;
+	line-height: 40px;
 	color: $dark-blue;
-	margin-bottom: 12px;
 	text-transform: uppercase;
 }
 h2{
-	font: 400 20px/32px 'Open Sans';
-  color: $dark-blue;
-  margin-bottom: 24px;
+	font: 400 20px 'Open Sans';
+	line-height:  30px;
+	color: $dark-blue;
+	margin: 16px 0;
 }
 h3{
-	font: 18px/10px 'Montserrat';
+	font: 18px 'Montserrat';
+	line-height: 28px;
 	color: $grey-title;
+	margin:0
 }
 p{
 	font: 300 15px/24px 'Open Sans';
 	color: $grey-title;
+	margin:0;
 }
 nav{
 	border-bottom: 1px solid $grey;
 	width: 100%;
+	height: 68px;
+	margin: 0 auto;
 }
 .menu {
 	display: block;
 	background: $white;
 	margin: 0 auto;
 	max-width: 940px;
-	padding: 5px 24px;
+	padding-top: 6px;
+
 }
 .logo{
 	margin: 0;
@@ -89,7 +100,7 @@ nav{
 		  text-decoration: none;
 		  padding: 20px 18px;
 		  display: block;
-		  color: $dark-blue;
+		  color: $dark-text;
 			font-weight: 600;
 		  transition: all 0.2s ease-in-out 0s;
 		}
@@ -162,6 +173,7 @@ nav{
 }
 
 input[type=text] {
+	margin-top: 4px;
 	width: 50%;
   border: 1px solid $search;
   border-radius: 4px;
@@ -188,7 +200,6 @@ input[type=text] {
 		.second-menu{
 			ul{
 				padding: 25px 0;
-				border-bottom: 1px solid $grey;
 				color: $dark-blue;
 				margin: 0;
 				li{
@@ -217,6 +228,7 @@ input[type=text] {
 }
 .documentation{
 	width: 80%;
+	margin-top: 80px;
 }
 
 
@@ -242,8 +254,9 @@ input[type=text] {
 
 .btn{
 	background: $white;
-	padding: 15px 15px 10px 15px;
-	margin-top: 25px;
+	height: 56px;
+	padding: 8px 16px;
+	margin-top: 28px;
 	width: 100%;
 	text-align: left;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.2);
@@ -252,10 +265,13 @@ input[type=text] {
 	color: $dark-blue;
 	display: flex;
 	font: 400 15px 'Montserrat';
+	line-height: 24px;
 	img{
 		width: 30px;
+		margin-top: 2px;
 		&.api{
 			width: 45px;
+			padding: 5px 0;
 		}
 	}
 	.text{
@@ -264,22 +280,47 @@ input[type=text] {
 }
 
 .articles{
-	padding: 50px 0 170px 0 ;
+	padding: 64px 0 170px 0 ;
 }
 
 
 .side-menu{
-	float: left;
 	width: 184px;
+	position: absolute;
+	margin-left: -240px;
 
 }
 .post-content{
-	margin: 0 auto;
-	.content{
-		float: left;
-		width: 700px;
-		margin-left: 56px;
+	margin: 80px auto;
+	padding-left: 240px;
+  width: 700px;
+	h1{
+		font-size: 24px;
+		color: $dark-blue;
 	}
+	h2{
+		font: 700 32px 'Montserrat';
+		font-weight: 400;
+		margin-top: 64px;
+		font-size: 20px;
+		line-height: 32px;
+		color: $dark-blue;
+	}
+	h3{
+		color: $dark-blue;
+		margin-top: 64px;
+	}
+	p{
+		color: $dark-text;
+		font-weight: 400;
+		margin-bottom: 20px;
+	}
+	a{
+		color: #1785FB;
+	}
+	// .highlight{
+	// 	background-color:
+	// }
 }
 
 .post-header{
