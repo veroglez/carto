@@ -244,10 +244,10 @@ input[type=text] {
 .col{
 	float: left;
 	&.col-3{
-		width: 31%;
+		width: 300px;
 	}
 	&.middle{
-		margin: 0 2%;
+		margin: 0 20px;
 	}
 	&.right{
 		float: right;
@@ -637,6 +637,6 @@ table{
 		}
   }
 	.second-menu{
-		padding: 0 20px; 
+		padding: 0 20px;
 	}
 }
