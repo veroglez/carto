@@ -92,6 +92,11 @@ nav{
 	display: block;
 	margin:0;
 	padding-left: 15px;
+	.sub-menu{
+		li{
+			width: 100%;
+		}
+	}
 	i {
 		border: solid $dark-blue;
 		border-width: 0 1px 1px 0;
