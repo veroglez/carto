@@ -15,21 +15,21 @@ Once you have installed a full Ruby development environment, you can create a ne
 ```
 ~ $ gem install jekyll bundler
 ```
-Create a new Jekyll site
+Create a new Jekyll site.
 
 ```
 ~ $ jekyll new carto_test
 ```
 
-Change into your new directory
+Change into your new directory.
 
 ```
 ~ $ cd carto_test
 ```
 
-Download the files from the repository and copy them into this new directory
+Download the files from the repository and copy them into this new directory.
 
-Build the site on the preview server
+Build the site on the preview server.
 
 ```
 ~/carto_test $ bundle exec jekyll serve
