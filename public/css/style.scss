@@ -404,16 +404,16 @@ input[type=text] {
 		.s2,.s1{
 			color: $code-green;
 		}
-		.p+.o+.nx+.nx+.o{
+		.p+.o+.nx+.nx+.o, .o+.p+.o+.nx+.nx{
 			color: #1A8886;
 		}
-		.c1, .p+.s1+.p{
+		.c1, .p+.s1+.p, .p+.nx+.p{
 			color: $text-grey;
 		}
 		.nb{
 			color: $code-yellow;
 		}
-		.p+.nx, .p+.nx+.o{
+		.p+.nx, .p+.nx+.o, .p+.nx+.p+.nx{
 			color: $code-blue;
 		}
 		.kd{
@@ -422,7 +422,7 @@ input[type=text] {
 		.nx+.p+.nx, .p+.p+.nx{
 			color: $code-red
 		}
-		.nx+.p{
+		.nx+.p+.nx+.p{
 			color:$dark-text;
 		}
 	}
