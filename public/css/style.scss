@@ -210,6 +210,7 @@ input[type=text] {
 .container{
 	background: $background;
 	height: 100vh;
+	padding-bottom: 80px;
 	.grid-container{
 		margin: 0 auto;
     max-width: 940px;
@@ -294,7 +295,7 @@ input[type=text] {
 }
 
 .articles{
-	padding: 64px 0 170px 0 ;
+	padding: 64px 0 0 0 ;
 	p{
 		margin-top: 8px;
 	}
