@@ -570,6 +570,13 @@ table{
 
 	.main-menu{
 		width: 100%;
+		ul{
+			width: 100%;
+			padding-bottom: 20px;
+			background: $white;
+			position: absolute;
+			z-index: 300;
+		}
 	}
 
   .menu-navigation {
@@ -608,7 +615,7 @@ table{
 			left: 0;
 			width: 100%;
 			transform: initial;
-			padding: 10px 5px 0px 5px
+			padding: 10px 5px 0px 5px;
 		}
   }
   nav {
@@ -629,4 +636,7 @@ table{
 	    margin: 5px 0;
 		}
   }
+	.second-menu{
+		padding: 0 20px; 
+	}
 }
