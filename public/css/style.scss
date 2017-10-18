@@ -86,7 +86,7 @@ nav{
 	margin: 0;
 	padding: 0;
 	float: left;
-	width: calc(100% - 150px);
+	width: calc(100% - 135px);
 }
 .menu-navigation {
 	display: block;
@@ -101,6 +101,11 @@ nav{
 		&.down {
 	    transform: rotate(45deg);
 	    -webkit-transform: rotate(45deg);
+		}
+	}
+	li:nth-last-child(2){
+		a{
+			padding-right: 0px;
 		}
 	}
 
