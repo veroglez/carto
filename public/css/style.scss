@@ -287,11 +287,14 @@ input[type=text] {
 	font: 400 15px 'Montserrat';
 	line-height: 24px;
 	img{
-		width: 30px;
-		margin-top: 2px;
+		&.icon{
+			width: 24px;
+			height: 25px;
+			margin-top: 5px;
+		}
 		&.api{
-			width: 45px;
-			padding: 5px 0;
+			width: 32px;
+			margin-right: 4px;
 		}
 	}
 	.text{
@@ -385,11 +388,11 @@ input[type=text] {
 		margin-bottom: 20px;
 	}
 	a{
-		color: #1785FB;
+		color: $light-blue;
 	}
 	.highlight{
 		overflow: hidden;
-		background: #162945;
+		background: $dark-text;
 		margin: 4px 0 0 0;
 		padding-bottom: 8px;
 		font-family: 'PT Mono', monospace;
@@ -559,6 +562,9 @@ table{
 }
 
 @media (max-width: 924px) {
+	.container{
+		height: 100%;
+	}
 	.side-menu{
 		display: none
 	}
