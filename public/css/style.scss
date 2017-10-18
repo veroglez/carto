@@ -204,8 +204,8 @@ input[type=text] {
 
 .container{
 	background: $background;
+	height: 100vh;
 	.grid-container{
-		padding-bottom: 100px;
 		margin: 0 auto;
     max-width: 940px;
 		.second-menu{
@@ -554,12 +554,13 @@ table{
 	}
 	.documentation{
 		text-align: center;
-		width: 100%;
+		width: 90%;
 		margin: 50px 0 auto;
+		padding: 0 5%;
 	}
 	.col{
 		&.col-3{
-			width: 50%;
+			width: 80%;
 			float: none;
 			margin: 0 auto;
 		}
@@ -637,6 +638,18 @@ table{
 		}
   }
 	.second-menu{
-		padding: 0 20px;
+		width: 90%;
+		padding: 0 5%;
+	}
+
+	input[type=text]{
+		width: 70%;
+		background-position: 90% 50%;
+	}
+
+	table{
+		td,th{
+			min-width: 0;
+		}
 	}
 }
