@@ -8,7 +8,6 @@ permalink: /getting-started/
 
 {% include side-menu.html %}
 
-
 {% include post-content-open.html %}
 
 The simplest way to use a visualization created in CARTO on an external site is as follows.

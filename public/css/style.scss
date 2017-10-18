@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700|Open+Sans:300,400,600,700,800');
 @import url('https://fonts.googleapis.com/css?family=PT+Mono');
 
-
-$white: #fff;
+$white: #FFFFFF;
 $grey: #EEEEEE;
 $dark-blue: #162745;
 $dark-text: #162945;
@@ -19,8 +18,6 @@ $code-red: #E06C75;
 $code-green: #98C379;
 $code-light-grey: #B1B8C1;
 $note-green: #F6FFF5;
-
-
 
 
 body {
@@ -81,7 +78,8 @@ nav{
 	float: left;
 	width: 135px;
 	img{
-		width: 135px;
+		width: 125px;
+		padding: 10px 0;
 	}
 }
 .main-menu{
@@ -187,19 +185,20 @@ nav{
 
 input[type=text] {
 	margin-top: 4px;
-	width: 50%;
+	height: 26px;
+	width: 420px;
   border: 1px solid $search;
   border-radius: 4px;
   font-size: 18px;
   background-color: $white;
   background-image: url('../images/icon-search.png');
-  background-position: 100% 50%;
+  background-position: 414px 50%;
+	background-size: 20px 20px;
   background-repeat: no-repeat;
   padding: 15px;
-	background-size: contain;
 	&::-webkit-input-placeholder {
 	    color:$search-text;
-			font:300 15px/20px 'Open Sans';
+			font:300 16px/30px 'Open Sans';
 	}
 }
 
@@ -209,7 +208,6 @@ input[type=text] {
 		padding-bottom: 100px;
 		margin: 0 auto;
     max-width: 940px;
-    padding: 0 24px;
 		.second-menu{
 			ul{
 				padding: 25px 0;
@@ -219,7 +217,7 @@ input[type=text] {
 					list-style: none;
 					display: inline-block;
 				  position: relative;
-					padding-right: 30px;
+					padding-right: 40px;
 					a{
 						color: $text-grey;
 						font: 300 13px/20px 'Open Sans';
@@ -238,7 +236,7 @@ input[type=text] {
 	clear: both;
 }
 .documentation{
-	width: 80%;
+	width: 780px;
 	margin-top: 80px;
 }
 
@@ -292,6 +290,9 @@ input[type=text] {
 
 .articles{
 	padding: 64px 0 170px 0 ;
+	p{
+		margin-top: 8px;
+	}
 }
 
 
@@ -427,7 +428,6 @@ table{
 	border-radius: 5px;
 	border-collapse: collapse;
   border-style: hidden;
-
 	color: $dark-blue;
 	&.rouge-table{
 		margin:0
@@ -442,6 +442,9 @@ table{
 	}
 	th{
 		font-weight: 500;
+	}
+	td{
+		&:first-child { font-family: 'PT Mono', monospace;}
 	}
 	td,th{
 		height: 18px;
@@ -468,6 +471,7 @@ table{
 
 .post{
 	display: flex;
+	margin-bottom: 150px;
 }
 
 .alert{
@@ -526,7 +530,7 @@ table{
 	position: absolute;
 	top: 0;
 	z-index: 3000;
-	background: $dark-blue;
+	background: $dark-text;
 	display: flex;
 	.text{
 		margin: auto;
@@ -540,10 +544,18 @@ table{
 }
 
 @media (max-width: 924px) {
+	.side-menu{
+		display: none
+	}
+	.post-content{
+		padding-left: 0;
+		width: 90%;
+		margin: 50px 5%;
+	}
 	.documentation{
 		text-align: center;
 		width: 100%;
-		margin: 0 auto;
+		margin: 50px 0 auto;
 	}
 	.col{
 		&.col-3{
@@ -602,6 +614,9 @@ table{
   nav {
     margin: 0;
     background: none;
+		.logo{
+			padding-left: 20px;
+		}
   }
 	.responsive-menu {
 		display: block;
@@ -614,6 +629,4 @@ table{
 	    margin: 5px 0;
 		}
   }
-
-
 }
